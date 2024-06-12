@@ -244,6 +244,7 @@ h6 {
     background: url("../img/hero-bg.jpeg")center;
     background-size: cover;
     background-position: 50% 0;
+    position: relative;
 }
 
 #hero:before {
@@ -272,7 +273,7 @@ h6 {
 
 #hero p {
   color: #fff;
-  margin-bottom: 200px;
+  margin-bottom: 0; /* Remove the large bottom margin */
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
@@ -283,6 +284,7 @@ h6 {
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
+
 
 @media (min-width: 1024px) {
   #hero {
