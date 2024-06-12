@@ -240,9 +240,9 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    height: 100lvh;
-    background: url("../img/hero-bg.jpeg")cover no-repeat;
-    background-size: cover;
+    height: 100vh;
+    background: url("../img/hero-bg.jpeg")center;
+    background-size: contain;
     background-position: 90% 100%;
 }
 
@@ -268,7 +268,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  margin-top: 190%;
+  margin-top: 90%;
 }
 
 #hero p {
