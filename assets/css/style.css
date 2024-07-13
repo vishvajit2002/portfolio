@@ -500,7 +500,8 @@ section {
   .button-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 20px; /* Adjust as needed */
+	margin-top: 25px; /* Adjust as needed */
+  font:status-bar;
   }
 .resume .resume-title {
   font-size: 26px;
