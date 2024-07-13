@@ -250,7 +250,7 @@ h6 {
       background: url("../img/heroo.jpeg")no-repeat;
         background-size: contain; /* Ensure the image covers the entire container on mobile */
         background-position: center center; /* Center the image on mobile */
-        background-size:75%;
+        background-size:100%;
     }
 }
 #hero:before {
