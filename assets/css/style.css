@@ -249,7 +249,7 @@ h6 {
 @media (max-width: 768px) {
   #hero {
     background: url("../img/heroo.jpeg");  
-      
+    background-size:75%;
 
   }
 }
