@@ -248,8 +248,8 @@ h6 {
   @media (max-width: 768px) {
     #hero {
       background: url("../img/heroo.jpeg")no-repeat;
-        background-size: contain; /* Ensure the image covers the entire container on mobile */
-        background-position: center center; /* Center the image on mobile */
+        background-size: cover; /* Ensure the image covers the entire container on mobile */
+        background-position:center; /* Center the image on mobile */
         background-size:100%;
     }
 }
