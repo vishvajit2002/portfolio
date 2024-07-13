@@ -250,6 +250,7 @@ h6 {
   #hero {
     background: url("../img/heroo.jpeg");  
     background-size:75%;
+    background-position: center center;
 
   }
 }
