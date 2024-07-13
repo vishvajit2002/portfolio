@@ -247,9 +247,10 @@ h6 {
   }
   @media (max-width: 768px) {
     #hero {
-      background: url("../img/heroo.jpeg")no-repeat;
-        background-size: cover; /* Ensure the image covers the entire container on mobile */
+      background: url("../img/heroo.jpeg");
+        background-size: 100%; /* Ensure the image covers the entire container on mobile */
         background-position:center; /* Center the image on mobile */
+        background-repeat: no-repeat;
     }
 }
 #hero:before {
