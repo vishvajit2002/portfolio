@@ -246,9 +246,9 @@ h6 {
     background-position:90% 70%;
     background-repeat: no-repeat;
 }
-@media (min-width: 769px) {
+@media (min-width: 389px) {
   #hero {
-      background-size: cover; /* Ensures the image covers the entire container for larger screens */
+      background-size: contain; /* Ensures the image covers the entire container for larger screens */
   }
 }
 
