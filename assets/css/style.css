@@ -250,7 +250,7 @@ h6 {
   #hero {
       background-size: cover; /* Ensure the image covers the entire container on mobile */
       background-position:right; /* Center the image on mobile */
-      background-size:50%;
+      background-size:100%;
 
   }
 }
