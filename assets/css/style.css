@@ -249,9 +249,10 @@ h6 {
     #hero {
       background: url("../img/heroo.jpeg");
         background-size: 100%; /* Ensure the image covers the entire container on mobile */
-        background-position:top; /* Center the image on mobile */
+        background-position:center; /* Center the image on mobile */
         background-repeat: no-repeat;
-        height: 82%; 
+        height: 100vh; 
+
     }
 }
 #hero:before {
