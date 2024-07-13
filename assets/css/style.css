@@ -242,14 +242,16 @@ h6 {
     width: 100%;
     height: 100vh; 
     background: url("../img/hero-bgg.jpeg"); 
-    background-size:77%;
-    background-position:90% 70%;
+    background-size:75%;
+    background-position:100% 100%;
     background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
   #hero {
       background-size: cover; /* Ensure the image covers the entire container on mobile */
-      background-position: center center; /* Center the image on mobile */
+      background-position:right; /* Center the image on mobile */
+      background-size:50%;
+
   }
 }
 
