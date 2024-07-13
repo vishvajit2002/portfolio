@@ -245,6 +245,7 @@ h6 {
     background-size: contain;
     background-position: 100% 100%;
     background-position: center;
+    background-repeat: no-repeat;
     
 }
 
