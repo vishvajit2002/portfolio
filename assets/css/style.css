@@ -252,7 +252,7 @@ h6 {
         background-position:top; /* Center the image on mobile */
         background-repeat: no-repeat;
         height: 100vh; 
-        background-size: 85%
+        background-size: 100%
     }
 }
 #hero:before {
