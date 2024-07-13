@@ -251,7 +251,7 @@ h6 {
         background-size: 100%; /* Ensure the image covers the entire container on mobile */
         background-position:center; /* Center the image on mobile */
         background-repeat: no-repeat;
-        height: 90vh; 
+        height: 110vh; 
         
     }
 }
