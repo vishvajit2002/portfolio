@@ -500,7 +500,7 @@ section {
   .button-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 36px; /* Adjust as needed */
+	margin-top: 42px; /* Adjust as needed */
   font:bolder;
   }
 .resume .resume-title {
