@@ -26,48 +26,33 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-
       <div class="profile">
         <img src="assets/img/profile-img.jpeg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">VISHVAJIT R</a></h1>
         <div class="social-links mt-3 text-center">
-           <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-           <a href="https://www.facebook.com/vishvajit2002" class="facebook"><i class="bx bxl-facebook"></i></a>
-           <a href="https://www.instagram.com/vishva_boi/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
-           <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-           <a href="https://www.linkedin.com/in/vishvajit-r-aa27862a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-         </div>
+          <a href="https://www.facebook.com/vishvajit2002" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/vishva_boi/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/vishvajit-r-aa27862a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
       </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>My projects</span></a></li>
-          <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
     </div>
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>My projects</span></a></li>
+        <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+        <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
   </header><!-- End Header -->
 
   <main id="main">
@@ -75,7 +60,6 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
           <h2>Portfolio Details</h2>
           <ol>
@@ -83,7 +67,6 @@
             <li>Portfolio Details</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
 
@@ -95,41 +78,19 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.png" alt="">
-                </div>
-
+              <div class="swiper-wrapper align-items-center" id="portfolio-images">
+                <!-- Product images will be loaded dynamically here -->
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Mini-Project</li>
-                <li><strong>Client</strong>: St. Joseph's college of arts and science, cuddalore</li>
-                <li><strong>Project date</strong>: 20 April 2024</li>
-                <li><strong>Project URL</strong>: <a href="https://vishvajit2002.github.io/mini-project/Gym_shopping_a21csdc53/index.html">https://vishvajit2002.github.io/mini-project/Gym_shopping_a21csdc53/index.html</a></li>
-                <li><strong>PPT</strong>:<a href="forms/ppt.pptx">Unleash_your_strength.pptx</a> </li>
-              </ul>
+            <div class="portfolio-info" id="portfolio-info">
+              <!-- Product info will be loaded dynamically here -->
             </div>
-            <div class="portfolio-description">
-              <h2>Abstract of the project</h2>
-              <p>
-                Unleash Your Strength" is an e-commerce project dedicated to revolutionizing the way fitness enthusiasts access and acquire gym products. This online platform offers a curated selection of high-quality gym equipment, supplements, apparel, and accessories, providing customers with a one-stop-shop for their fitness needs
-              </p>
+            <div class="portfolio-description" id="portfolio-description">
+              <!-- Product description will be loaded dynamically here -->
             </div>
           </div>
 
@@ -139,24 +100,6 @@
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>vishvajit</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-      
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -171,6 +114,114 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Get the query parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('product');
+
+    const productDetails = {
+      1: {
+        images: ['assets/img/portfolio/portfolio-1.png', 'assets/img/portfolio/portfolio-2.png', 'assets/img/portfolio/portfolio-3.png'],
+        info: {
+          category: 'Mini-Project',
+          client: 'St. Joseph\'s college of arts and science, cuddalore',
+          date: '20 April 2024',
+          url: 'https://vishvajit2002.github.io/mini-project/Gym_shopping_a21csdc53/index.html',
+          ppt: 'forms/ppt.pptx',
+        },
+        description: 'Unleash Your Strength is an e-commerce project for fitness enthusiasts, offering gym products like equipment, supplements, apparel, and accessories.'
+      },
+      2: {
+        images: ['assets/img/portfolio/Car/Screenshot (345).png', 'assets/img/portfolio/Car/Screenshot (346).png','assets/img/portfolio/Car/Screenshot (347).png'],
+        info: {
+          category: 'Web Development',
+          client: 'SLA Softlogic Systems',
+          date: '12 June 2024',
+          url: 'https://vishvajit2002.github.io/car-dealership/index.html',
+          ppt: '',
+        },
+        description: 'A modern car dealership website offering an intuitive interface for browsing car models and specifications.'
+      },
+      3: {
+        images: ['assets/img/portfolio/wikipedia/Screenshot (338).png','assets/img/portfolio/wikipedia/Screenshot (339).png','assets/img/portfolio/wikipedia/Screenshot (340).png'],
+        info: {
+          category: 'Web Development',
+          client: 'SLA Softlogic Systems',
+          date: '25 August 2024',
+          url: 'https://vishvajit2002.github.io/wikipedia-clone/index.html',
+          ppt: '',
+        },
+        description: 'A Wikipedia clone to display articles on various topics with search functionality and responsive design.'
+      },
+    };
+
+    // Check if the product exists and populate the details
+    if (productId && productDetails[productId]) {
+      const product = productDetails[productId];
+      
+      // Load images
+      const imageContainer = document.getElementById('portfolio-images');
+      product.images.forEach(imgSrc => {
+        const slide = document.createElement('div');
+        slide.classList.add('swiper-slide');
+        const img = document.createElement('img');
+        img.src = imgSrc;
+        slide.appendChild(img);
+        imageContainer.appendChild(slide);
+      });
+
+      // Load portfolio info
+      const infoContainer = document.getElementById('portfolio-info');
+      infoContainer.innerHTML = `
+        <h3>Project Information</h3>
+        <ul>
+          <li><strong>Category</strong>: ${product.info.category}</li>
+          <li><strong>Client</strong>: ${product.info.client}</li>
+          <li><strong>Project Date</strong>: ${product.info.date}</li>
+          <li><strong>Project URL</strong>: <a href="${product.info.url}" target="_blank">${product.info.url}</a></li>
+          <li><strong></strong> <a href="${product.info.ppt}" target="_blank">${product.info.ppt}</a></li>
+        </ul>
+      `;
+
+      // Load description
+      const descriptionContainer = document.getElementById('portfolio-description');
+      descriptionContainer.innerHTML = `
+        <h2>Abstract of the Project</h2>
+        <p>${product.description}</p>
+      `;
+      
+      // Initialize Swiper slider
+      const swiper = new Swiper('.swiper', {
+        loop: true,         // Loop images
+        slidesPerView: 1,   // Show one image at a time
+        spaceBetween: 10,    // Space between images
+        navigation: {       // Optional: add navigation arrows
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {       // Optional: add pagination
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    } else {
+      // If the productId is not valid, show a fallback message
+      document.getElementById('portfolio-details').innerHTML = '<p>Product details not found.</p>';
+    }
+  </script>
+
+<!-- footer -->
+ <footer id="footer">
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>vishvajit</span></strong>
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+    </div>
+  </div>
+</footer><!-- End Footer -->
 
 </body>
 
