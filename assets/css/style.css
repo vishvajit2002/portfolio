@@ -210,7 +210,7 @@ h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 25px;
+  top: 45px;
   z-index: 9998;
   border: 0;
   font-size: 24px;
@@ -1280,7 +1280,7 @@ section {
 /* Speech Bubble (Hidden by default) */
 .speech-bubble {
   position: fixed;
-  top: 40%; /* Adjust top position to make it appear higher */
+  top: 30%; /* Adjust top position to make it appear higher */
   right: 10px; /* Keep it towards the right side */
   background-color: #0f7bb0; /* Soft light blue background */
   color: #f8f3f3;
