@@ -1350,7 +1350,7 @@ section {
     top: 10%; /* Adjust the top position for mobile to be higher */
     width: auto; /* Let the width auto-adjust */
     max-width: 180px; /* Make it even smaller on mobile */
-    font-size: 12px; /* Adjust font size for mobile */
+    font-size: 10px; /* Adjust font size for mobile */
   }
 
   .bubble-arrow {
