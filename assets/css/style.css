@@ -1278,7 +1278,7 @@ section {
 /* Speech Bubble (Hidden by default) */
 .speech-bubble {
   position: fixed;
-  top: 25%; /* Move the bubble 2cm higher (from 30% to 25%) */
+  top: 20%; /* Move the bubble 2cm higher (from 30% to 25%) */
   right: 10px; /* Keep it towards the right side */
   background-color: #0f7bb0; /* Soft light blue background */
   color: #f8f3f3;
@@ -1324,7 +1324,7 @@ section {
 
 .speech-bubble p {
   margin: 0;
-  font-size: 14px; /* Reduce text size */
+  font-size: 17px; /* Reduce text size */
   line-height: 1.4;
 }
 
