@@ -71,7 +71,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   position: fixed;
-  top: 0;
+  top: 5%;
   left: 0;
   bottom: 0;
   width: 300px;
@@ -1279,7 +1279,7 @@ section {
 /* Speech Bubble (Hidden by default) */
 .speech-bubble {
   position: fixed;
-  top: 30%; /* Adjust top position to make it appear higher */
+  top: 40%; /* Adjust top position to make it appear higher */
   right: 10px; /* Keep it towards the right side */
   background-color: #0f7bb0; /* Soft light blue background */
   color: #f8f3f3;
