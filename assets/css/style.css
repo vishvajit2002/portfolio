@@ -1274,10 +1274,12 @@ section {
 }
 
 
+
+
 /* Speech Bubble (Hidden by default) */
 .speech-bubble {
   position: fixed;
-  top: 20%; /* Adjust top position to make it appear lower */
+  top: 8%; /* Adjust top position to make it appear higher */
   right: 10px; /* Keep it towards the right side */
   background-color: #0f7bb0; /* Soft light blue background */
   color: #f8f3f3;
@@ -1294,7 +1296,7 @@ section {
 
 .bubble-arrow {
   position: absolute;
-  top: -8px; /* Position arrow at the top of the bubble */
+  top: -12px; /* Position arrow above the speech bubble */
   right: 10px; /* Align the arrow with the right side of the bubble */
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -1336,7 +1338,7 @@ section {
 @media screen and (max-width: 767px) {
   .speech-bubble {
     display: block;  /* Show the speech bubble in mobile view */
-    top: 18%; /* Adjust the top position for mobile to be lower */
+    top: 12%; /* Adjust the top position for mobile to be higher */
     width: auto; /* Let the width auto-adjust */
     max-width: 180px; /* Make it even smaller on mobile */
     font-size: 12px; /* Adjust font size for mobile */
@@ -1344,7 +1346,7 @@ section {
 
   .bubble-arrow {
     right: 10px; /* Align the arrow with the right edge of the bubble */
-    top: -12px; /* Adjust the top position of the arrow */
+    top: -14px; /* Adjust the top position of the arrow to make it higher */
   }
 }
 
