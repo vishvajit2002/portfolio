@@ -41,7 +41,7 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 7px;
+  bottom: 15px;
   z-index: 996;
   background: #149ddd;
   width: 40px;
@@ -371,7 +371,17 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+#about {
+  margin-top: 10px;  /* Reducing top margin */
+  padding-top: 10px; /* Reducing top padding */
+}
+#about .section-title {
+  margin-top: 0; /* Remove any extra margin above the section title */
+}
+
 .about .content h3 {
+  
   font-weight: 700;
   font-size: 26px;
   color: #173b6c;
