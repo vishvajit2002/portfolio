@@ -261,3 +261,57 @@
   new PureCounter();
 
 })()
+
+
+// certificate section filter and show more button functionality
+$(document).ready(function() {
+  // Initialize Isotope
+  var $portfolioContainer = $('.certificate-container').isotope({
+    itemSelector: '.certificate-item',
+    layoutMode: 'fitRows' // Adjust as per your needs
+  });
+
+  // Initially hide "more-certificates"
+  $('.more-certificates').hide();
+
+  // When a filter is clicked
+  $('#certificate-flters li').click(function() {
+    var filterValue = $(this).attr('data-filter');
+    
+    // Remove the "filter-active" class from all filter buttons
+    $('#certificate-flters li').removeClass('filter-active');
+    // Add the "filter-active" class to the clicked filter
+    $(this).addClass('filter-active');
+
+    // Fade out all items before filtering (smooth transition)
+    $portfolioContainer.children('.certificate-item').fadeOut(300, function() {
+      // After fade out, apply the Isotope filter
+      $portfolioContainer.isotope({
+        filter: filterValue
+      });
+
+      // If "All" filter is selected, show all certificates, including "more-certificates"
+      if (filterValue === '*') {
+        // First, fade in the hidden certificates
+        $('.more-certificates').fadeIn(300, function() {
+          // After showing hidden certificates, refresh Isotope layout
+          $portfolioContainer.isotope('layout');
+        });
+      }
+
+      // Fade in the filtered items after applying filter
+      $portfolioContainer.children(filterValue).fadeIn(300);
+    });
+  });
+
+  // Show More button functionality
+  $('#show-more-btn').click(function() {
+    // Show all hidden certificates with the class "more-certificates"
+    $('.more-certificates').fadeIn(300, function() {
+      // After fading in, refresh Isotope layout
+      $portfolioContainer.isotope('layout');
+    });
+    // Hide the "Show More" button after clicking
+    $(this).hide();
+  });
+});
