@@ -315,3 +315,47 @@ $(document).ready(function() {
     $(this).hide();
   });
 });
+
+
+// Show the speech bubble after a short delay (only in mobile view)
+$(document).ready(function() {
+  setTimeout(function() {
+    // Check if the viewport width is mobile-sized (below 768px)
+    if ($(window).width() <= 767) {
+      $('#speech-bubble').fadeIn(500); // Fade in the speech bubble
+    }
+  }, 500); // Wait for 0.5s after page load
+
+  // Hide the speech bubble when the user clicks the mobile nav toggle
+  $('.mobile-nav-toggle').click(function() {
+    $('#speech-bubble').fadeOut(300); // Hide the speech bubble when the toggle button is clicked
+  });
+});
+
+// Function to show/hide the speech bubble based on scroll position
+function checkScrollPosition() {
+  // Get the current scroll position
+  const scrollPosition = window.scrollY || window.pageYOffset;
+
+  // Get the speech bubble element
+  const speechBubble = document.querySelector('.speech-bubble');
+
+  // If the scroll position is at the top of the page, show the bubble
+  if (scrollPosition === 0) {
+    speechBubble.classList.remove('hide-speech-bubble');
+  } else {
+    speechBubble.classList.add('hide-speech-bubble');
+  }
+}
+
+// When the page loads or user scrolls, check the scroll position
+window.addEventListener('load', checkScrollPosition);
+window.addEventListener('scroll', checkScrollPosition);
+
+// Show the speech bubble after a delay when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+  const speechBubble = document.querySelector('.speech-bubble');
+  setTimeout(function() {
+    speechBubble.classList.remove('hide-speech-bubble');
+  }, 1000); // Delay showing the bubble by 1 second
+});
