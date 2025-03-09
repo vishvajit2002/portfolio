@@ -1288,24 +1288,24 @@ section {
 /* Speech Bubble (Hidden by default) */
 .speech-bubble {
   position: fixed;
-  top: 10%; /* Move the bubble 2cm higher (from 30% to 25%) */
+  top: 5%; /* Move the bubble 2cm higher (from 30% to 25%) */
   right: 10px; /* Keep it towards the right side */
   background-color: #0f7bb0; /* Soft light blue background */
   color: #f8f3f3;
   padding: 4px 2px; /* Slightly more padding */
-  border-radius: 20px;
+  border-radius: 15px;
   width: auto;
   max-width: 220px; /* Smaller size for the bubble */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: none;  /* Hidden by default */
   z-index: 1000;
-  animation: bubbleAnimation 6s infinite; /* Slower animation */
+  animation: bubbleAnimation 7s infinite; /* Slower animation */
 }
 
 .bubble-arrow {
   position: absolute;
-  top: -18px; /* Move the arrow up to align with the higher bubble */
+  top: -16px; /* Move the arrow up to align with the higher bubble */
   right: 15px; /* Align the arrow with the right side of the bubble */
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
