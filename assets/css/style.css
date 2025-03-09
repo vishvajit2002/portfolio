@@ -1347,7 +1347,7 @@ section {
 @media screen and (max-width: 767px) {
   .speech-bubble {
     display: block;  /* Show the speech bubble in mobile view */
-    top: 7%; /* Adjust the top position for mobile to be higher */
+    top: 8%; /* Adjust the top position for mobile to be higher */
     width: auto; /* Let the width auto-adjust */
     max-width: 180px; /* Make it even smaller on mobile */
     font-size: 10px; /* Adjust font size for mobile */
