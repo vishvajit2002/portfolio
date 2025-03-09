@@ -1288,7 +1288,7 @@ section {
 /* Speech Bubble (Hidden by default) */
 .speech-bubble {
   position: fixed;
-  top: 30%; /* Move the bubble 2cm higher (from 30% to 25%) */
+  top: 10%; /* Move the bubble 2cm higher (from 30% to 25%) */
   right: 10px; /* Keep it towards the right side */
   background-color: #0f7bb0; /* Soft light blue background */
   color: #f8f3f3;
@@ -1305,8 +1305,8 @@ section {
 
 .bubble-arrow {
   position: absolute;
-  top: -20px; /* Move the arrow up to align with the higher bubble */
-  right: 13x; /* Align the arrow with the right side of the bubble */
+  top: -18px; /* Move the arrow up to align with the higher bubble */
+  right: 15px; /* Align the arrow with the right side of the bubble */
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 20px solid #0f7bb0; /* Arrow pointing up to the top */
