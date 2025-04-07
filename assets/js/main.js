@@ -303,6 +303,7 @@ $(document).ready(function() {
       $portfolioContainer.children(filterValue).fadeIn(300);
     });
   });
+  
 
   // Show More button functionality
   $('#show-more-btn').click(function() {
@@ -314,6 +315,13 @@ $(document).ready(function() {
     // Hide the "Show More" button after clicking
     $(this).hide();
   });
+});
+$(window).on('resize', function () {
+  $portfolioContainer.isotope('layout');
+});
+
+$portfolioContainer.imagesLoaded().progress(function () {
+  $portfolioContainer.isotope('layout');
 });
 
 
