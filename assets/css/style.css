@@ -1304,19 +1304,35 @@ section {
 .more-certificates {
   display: none;
 }
-
 @media (max-width: 600px) {
   .certificate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 10px;
+    margin-left: 7%;         /* Slightly more to the right */
+    width: 93%;
+    box-sizing: border-box;
   }
 
   .certificates .certificate-item {
-    flex: 1 1 100%;
-    max-width: 100%;
+    width: 95%;
+    max-width: 400px;
     margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+
+  .certificates .certificate-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
   }
 }
+
 
 
 /* Show More Button */
