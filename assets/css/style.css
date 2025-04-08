@@ -1308,35 +1308,31 @@ section {
 .more-certificates {
   display: none;
 }
+.certificates .certificate-item {
+  margin: 20px auto 10px auto;   /* top 20px, bottom 10px, centered */
+  max-width: 95%;                /* tighten a bit to avoid awkward centering */
+  text-align: center;
+}
 
-@media (max-width: 599px) {
-  .certificates .certificate-item {
-    margin: 20px auto;             /* Center item and add space below */
-    max-width: 90%;                /* Increase width */
-  }
+.certificates .certificate-wrap {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;           /* keep consistent shape */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;           /* smaller gap */
+  padding: 0;
+}
 
-  .certificates .certificate-wrap {
-    height: 250px;                 /* Increase height */
-    width: 100%;
-    margin-bottom: 20px;           /* Add bottom space */
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  /* Hide all plus icons by default on mobile */
-  .certificates .certificate-links {
-    opacity: 0;
-    bottom: -60px;
-    pointer-events: none;
-  }
-
-  /* Show plus icon only when hovering */
-  .certificates .certificate-wrap:hover .certificate-links {
-    opacity: 1;
-    bottom: 0;
-    pointer-events: auto;
-  }
+.certificates .certificate-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* THIS makes image fill both width and height */
+  object-position: center;
+  border-radius: 10px;
 }
 
 
