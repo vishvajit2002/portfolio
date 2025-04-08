@@ -1308,34 +1308,35 @@ section {
 .more-certificates {
   display: none;
 }
-.certificates .certificate-item {
-  margin: 20px auto 10px auto;   /* top 20px, bottom 10px, centered */
-  max-width: 95%;                /* tighten a bit to avoid awkward centering */
-  text-align: center;
-}
 
-.certificates .certificate-wrap {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;           /* keep consistent shape */
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;           /* smaller gap */
-  padding: 0;
-}
-
-.certificates .certificate-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;             /* THIS makes image fill both width and height */
-  object-position: center;
-  border-radius: 10px;
-}
-
-
+@media (max-width: 599px) {
+  .certificates .certificate-item {
+    margin: 20px auto 10px auto;   /* top 20px, bottom 10px, centered */
+    max-width: 95%;                /* tighten a bit to avoid awkward centering */
+    text-align: center;
+  }
+  
+  .certificates .certificate-wrap {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;           /* keep consistent shape */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;           /* smaller gap */
+    padding: 0;
+  }
+  
+  .certificates .certificate-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;             /* THIS makes image fill both width and height */
+    object-position: center;
+    border-radius: 10px;
+  }
+  
 /* Show More Button */
 #show-more-btn {
   background-color: #149ddd;
