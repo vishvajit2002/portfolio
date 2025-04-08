@@ -1310,7 +1310,7 @@ section {
 }
 @media (max-width: 600px) {
   .certificates {
-    padding: 30px !important;
+    padding: 36px !important;
     margin: 0 auto !important;
     width: 100%;
     display: flex;
