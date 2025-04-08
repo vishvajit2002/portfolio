@@ -1307,10 +1307,9 @@ section {
 /* Show more section (if used) */
 .more-certificates {
   display: none;
-}
-@media (max-width: 600px) {
+}@media (max-width: 600px) {
   .certificates {
-    padding: 36px !important;
+    padding: 20px !important;
     margin: 0 auto !important;
     width: 100%;
     display: flex;
@@ -1319,24 +1318,25 @@ section {
   }
 
   .certificate-container {
-    margin-left: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px; /* Add space between each certificate */
   }
 
   .certificate-item {
-    width: 90% !important; /* Wider and more centered */
-    margin: 0 auto;
+    width: 100% !important;
+    max-width: 100% !important;
     display: flex;
     justify-content: center;
   }
 
   .certificate-wrap {
-    width: 100% !important;
+    width: 90% !important; /* More space usage */
+    max-width: 100%;
     height: auto !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds a clean border effect */
   }
 
   .certificate-wrap img {
@@ -1346,6 +1346,7 @@ section {
     display: block;
   }
 }
+
 
 
 /* Show More Button */
