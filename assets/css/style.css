@@ -1308,21 +1308,29 @@ section {
 .more-certificates {
   display: none;
 }
-@media (max-width: 600px) {
-  .certificate-container {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 20px !important;
-  }
 
-  .certificate-item {
-    flex: 0 0 100% !important; /* Full width on small screens */
+/* Fix certificate alignment and prevent overlap on small screens */
+@media (max-width: 599px) {
+  .certificates .certificate-item {
+    flex: 1 1 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
   }
+
+  .certificates .certificate-wrap {
+    height: auto; /* Let height adjust naturally */
+    max-width: 90%; /* Slight margin on sides */
+  }
+
+  .certificates .certificate-wrap img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
+  
 
 
 
