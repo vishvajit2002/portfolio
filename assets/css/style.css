@@ -1311,26 +1311,31 @@ section {
 
 /* Fix certificate alignment and prevent overlap on small screens */
 @media (max-width: 599px) {
-  .certificates .certificate-item {
-    flex: 1 1 100%;
-    max-width: 100%;
-    display: flex;
+  .certificate-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
     justify-content: center;
+    gap: 1rem; /* Optional spacing between items */
   }
 
-  .certificates .certificate-wrap {
-    height: auto; /* Let height adjust naturally */
-    max-width: 90%; /* Slight margin on sides */
+  .certificate-item {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
   }
 
-  .certificates .certificate-wrap img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  .certificate-wrap {
+    max-width: 90% !important;
+    height: auto !important;
+  }
+
+  .certificate-wrap img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
   }
 }
-
-  
 
 
 
