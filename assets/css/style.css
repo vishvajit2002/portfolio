@@ -1325,7 +1325,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;           /* smaller gap */
+    margin-bottom: 6px;           /* smaller gap */
     padding: 0;
   }
   
