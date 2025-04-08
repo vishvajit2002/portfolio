@@ -1169,6 +1169,7 @@ section {
 --------------------------------------------------------------*/
 .certificates {
   padding: 40px 15px;
+  margin-bottom: 50px;
 }
 
 /* Container for the items */
@@ -1198,7 +1199,7 @@ section {
 /* Large screens */
 @media (min-width: 900px) {
   .certificates .certificate-item {
-    flex: 1 1 30%;
+    flex: 1 1 40%;
   }
 }
 
@@ -1308,12 +1309,13 @@ section {
   .certificates {
     padding: 0 !important;
     margin: 0 !important;
-    width: 70%;
+    width: 100%;
+    height: max-content;
+    margin: 10vh;
   }
 
   .certificate-item {
     width: 100% !important;
-   
     box-sizing: border-box;
     border-radius: 0; /* optional, makes it flush */
   }
