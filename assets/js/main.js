@@ -367,6 +367,11 @@ document.addEventListener('DOMContentLoaded', function() {
     speechBubble.classList.remove('hide-speech-bubble');
   }, 1000); // Delay showing the bubble by 1 second
 });
+
+
+
 $(window).on('resize', function () {
-  $portfolioContainer.isotope('layout');
+  setTimeout(function() {
+    $portfolioContainer.isotope('layout');
+  }, 300); // Slight delay to wait for resize reflow
 });

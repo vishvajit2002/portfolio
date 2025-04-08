@@ -1314,15 +1314,16 @@ section {
   .certificate-container {
     display: flex !important;
     flex-wrap: wrap !important;
+    align-items: flex-start;
     justify-content: center;
-    gap: 1rem; /* Optional spacing between items */
+    gap: 16px; /* or whatever spacing you want between items */
   }
 
   .certificate-item {
-    flex: 1 1 100% !important;
-    max-width: 100% !important;
+    width: 100% !important;
     display: flex !important;
-    justify-content: center !important;
+    justify-content: center;
+    align-items: center;
   }
 
   .certificate-wrap {
@@ -1330,10 +1331,14 @@ section {
     height: auto !important;
   }
 
+  .certificate-wrap::before {
+    display: none !important; /* That semi-transparent overlay may be messing layout */
+  }
+
   .certificate-wrap img {
     width: 100% !important;
     height: auto !important;
-    object-fit: contain !important;
+    object-fit: contain;
   }
 }
 
