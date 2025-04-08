@@ -1308,41 +1308,74 @@ section {
 .more-certificates {
   display: none;
 }
-@media (max-width: 768px) {
-  .certificate-item {
+
+@media (max-width: 599px) {
+  .certificates .certificate-item {
+    margin: 20px auto 6px auto;   /* top 20px, bottom 10px, centered */
+    max-width: 95%;                /* tighten a bit to avoid awkward centering */
+    text-align: center;
+  }
+  
+  .certificates .certificate-wrap {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;           /* keep consistent shape */
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; /* reduce spacing below */
+    align-items: center;
+    margin-bottom: 6px;           /* smaller gap */
+    padding: 0;
   }
-
-  .certificate-wrap {
-    width: 90%; /* slightly smaller so it shifts right visually */
-    height: auto;
-    position: relative;
-  }
-
-  .certificate-wrap img {
+  
+  .certificates .certificate-wrap img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Fill the container perfectly */
+    object-fit: cover;             /* THIS makes image fill both width and height */
+    object-position: center;
     border-radius: 10px;
   }
+  
+/* Show More Button */
+#show-more-btn {
+  background-color: #149ddd;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-  .certificate-links {
-    display: none; /* Hide by default */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+#show-more-btn:hover {
+  background-color: #0f7bb0;
+}
 
-  .certificate-wrap:hover .certificate-links {
-    display: block; /* Show only on hover */
-  }
+/* Show More Button */
+.show-more-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
 
-  .certificate-container {
-    overflow: hidden; /* Prevent next cert from showing outside */
-  }
+#show-more-btn {
+  background-color: #149ddd;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+#show-more-btn:hover {
+  background-color: #0f7bb0;
+}
+
+/* Initially hide extra certs */
+.more-certificates {
+  display: none;
 }
 
 
