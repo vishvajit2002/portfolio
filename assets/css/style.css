@@ -1187,6 +1187,9 @@ section {
   max-width: 300px;
   margin: 10px;
   box-sizing: border-box;
+  justify-content: center;
+  justify-content: center;
+
 }
 
 /* Medium screens */
