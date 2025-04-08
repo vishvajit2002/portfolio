@@ -1309,20 +1309,35 @@ section {
   display: none;
 }
 
-
 @media (max-width: 599px) {
   .certificates .certificate-item {
-    margin: 0 auto;              /* Center the certificate */
-    max-width: 95%;              /* Make it wider */
+    margin: 20px auto;             /* Center item and add space below */
+    max-width: 90%;                /* Increase width */
   }
 
   .certificates .certificate-wrap {
-    height: 250px;               /* Increase height */
-    width: 100%;                 /* Use full width of the item */
+    height: 250px;                 /* Increase height */
+    width: 100%;
+    margin-bottom: 20px;           /* Add bottom space */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Hide all plus icons by default on mobile */
+  .certificates .certificate-links {
+    opacity: 0;
+    bottom: -60px;
+    pointer-events: none;
+  }
+
+  /* Show plus icon only when hovering */
+  .certificates .certificate-wrap:hover .certificate-links {
+    opacity: 1;
+    bottom: 0;
+    pointer-events: auto;
   }
 }
-
-
 
 
 /* Show More Button */
