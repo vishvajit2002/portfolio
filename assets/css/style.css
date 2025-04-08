@@ -1312,35 +1312,32 @@ section {
 /* Fix certificate alignment and prevent overlap on small screens */
 @media (max-width: 599px) {
   .certificate-container {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: flex-start;
+    display:contents;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 16px; /* or whatever spacing you want between items */
+    gap: 16px;
+    padding-left: 35px;
   }
 
   .certificate-item {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
+    flex: 0 1 90%;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .certificate-wrap {
-    max-width: 90% !important;
-    height: auto !important;
-  }
-
-  .certificate-wrap::before {
-    display: none !important; /* That semi-transparent overlay may be messing layout */
+    max-width: 100%;
+    height: auto;
   }
 
   .certificate-wrap img {
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
     object-fit: contain;
+    display: block;
   }
 }
+
 
 
 
