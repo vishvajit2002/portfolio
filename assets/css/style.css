@@ -1307,45 +1307,22 @@ section {
 /* Show more section (if used) */
 .more-certificates {
   display: none;
-}@media (max-width: 600px) {
-  .certificates {
-    padding: 20px !important;
-    margin: 0 auto !important;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
+}
+@media (max-width: 600px) {
   .certificate-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; /* Add space between each certificate */
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 20px !important;
   }
 
   .certificate-item {
-    width: 100% !important;
-    max-width: 100% !important;
+    flex: 0 0 100% !important; /* Full width on small screens */
     display: flex;
     justify-content: center;
   }
-
-  .certificate-wrap {
-    width: 90% !important; /* More space usage */
-    max-width: 100%;
-    height: auto !important;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds a clean border effect */
-  }
-
-  .certificate-wrap img {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain;
-    display: block;
-  }
 }
+
 
 
 
