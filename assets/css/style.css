@@ -1312,7 +1312,7 @@ section {
 @media (max-width: 599px) {
 
   .certificates {
-    margin-bottom: 6px;
+    margin-bottom: 2px;
   }
   .certificates .certificate-item {
     margin: 20px auto 10px auto;   /* top 20px, bottom 10px, centered */
@@ -1331,7 +1331,7 @@ section {
     align-items: center;
     margin-bottom: 6px;           /* smaller gap */
     padding: 0;
-    margin-right: 15px;
+    margin-right: 10px;
   }
   
   .certificates .certificate-wrap img {
