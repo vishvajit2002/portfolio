@@ -1311,8 +1311,8 @@ section {
 
 @media (max-width: 599px) {
   .certificates .certificate-item {
-    margin: 9px 16px;   /* top 20px, bottom 10px, centered */
-    max-width: 95%;                /* tighten a bit to avoid awkward centering */
+    margin: 10px 16px;   /* top 20px, bottom 10px, centered */
+    max-width: 100%;                /* tighten a bit to avoid awkward centering */
     text-align: center;
   }
   
