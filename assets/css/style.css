@@ -1191,6 +1191,22 @@ section {
 
 }
 
+/* Medium screens */
+@media (min-width: 600px) {
+  .certificates .certificate-item {
+    flex: 1 1 48%;
+    
+  }
+}
+
+/* Large screens */
+@media (min-width: 900px) {
+  .certificates .certificate-item {
+    flex: 1 1 40%;
+  }
+}
+
+
 
 
 /* Certificate wrapper with fixed height */
