@@ -325,53 +325,29 @@ $portfolioContainer.imagesLoaded().progress(function () {
 });
 
 
-// Show the speech bubble after a short delay (only in mobile view)
-$(document).ready(function() {
-  setTimeout(function() {
-    // Check if the viewport width is mobile-sized (below 768px)
-    if ($(window).width() <= 767) {
-      $('#speech-bubble').fadeIn(500); // Fade in the speech bubble
-    }
-  }, 500); // Wait for 0.5s after page load
-
-  // Hide the speech bubble when the user clicks the mobile nav toggle
-  $('.mobile-nav-toggle').click(function() {
-    $('#speech-bubble').fadeOut(300); // Hide the speech bubble when the toggle button is clicked
-  });
-});
-
-// Function to show/hide the speech bubble based on scroll position
-function checkScrollPosition() {
-  // Get the current scroll position
-  const scrollPosition = window.scrollY || window.pageYOffset;
-
-  // Get the speech bubble element
-  const speechBubble = document.querySelector('.speech-bubble');
-
-  // If the scroll position is at the top of the page, show the bubble
-  if (scrollPosition === 0) {
-    speechBubble.classList.remove('hide-speech-bubble');
-  } else {
-    speechBubble.classList.add('hide-speech-bubble');
+// speech bubble
+$(document).ready(function () {
+  if ($(window).width() <= 767) {
+    // Show the bubble immediately
+    $('#speech-bubble').css({
+      'display': 'block',
+      'animation': 'none' // Kill the animation immediately
+    });
+    
+    // Hide after 3 seconds - no fade, just remove it
+    setTimeout(function () {
+      $('#speech-bubble').remove();
+    }, 10000);
   }
-}
-
-// When the page loads or user scrolls, check the scroll position
-window.addEventListener('load', checkScrollPosition);
-window.addEventListener('scroll', checkScrollPosition);
-
-// Show the speech bubble after a delay when the page loads
-document.addEventListener('DOMContentLoaded', function() {
-  const speechBubble = document.querySelector('.speech-bubble');
-  setTimeout(function() {
-    speechBubble.classList.remove('hide-speech-bubble');
-  }, 1000); // Delay showing the bubble by 1 second
 });
-
-
-
-$(window).on('resize', function () {
-  setTimeout(function() {
-    $portfolioContainer.isotope('layout');
-  }, 300); // Slight delay to wait for resize reflow
+$(document).ready(function () {
+  if ($(window).width() <= 767) {
+    $('#speech-bubble').css('animation', 'none').fadeIn(100);
+    
+    setTimeout(function () {
+      $('#speech-bubble').stop(true).fadeOut(300, function() {
+        $(this).remove();
+      });
+    }, 3000);
+  }
 });

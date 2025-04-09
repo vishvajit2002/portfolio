@@ -1373,6 +1373,7 @@ section {
 
 /* Speech Bubble (Hidden by default) */
 .speech-bubble {
+  display: none;
   position: fixed;
   top: 25px; /* Move the bubble 2cm higher (from 30% to 25%) */
   right: 10px; /* Keep it towards the right side */
@@ -1399,25 +1400,36 @@ section {
 }
 
 /* Speech Bubble Text Animation */
+/* REPLACE your current animation code with this */
 @keyframes bubbleAnimation {
   0% {
     opacity: 0;
     transform: translateY(-20px);
   }
-  20% {
+  10% {
     opacity: 1;
     transform: translateY(0);
   }
-  80% {
+  90% {
     opacity: 1;
     transform: translateY(0);
   }
   100% {
     opacity: 0;
-    transform: translateY(20px);
+    visibility: hidden; /* This makes it stay hidden */
+    display: none; /* Nuclear option to prevent reappearing */
   }
 }
 
+.speech-bubble {
+  animation: bubbleAnimation 10s forwards; /* 'forwards' keeps final state */
+  animation-iteration-count: 1; /* Only plays once */
+}
+
+.speech-bubble {
+  animation: bubbleAnimation 10s forwards; /* 'forwards' keeps final state */
+  animation-iteration-count: 1; /* Only plays once */
+}
 .speech-bubble p {
   margin: 0;
   font-size: 17px; /* Reduce text size */
