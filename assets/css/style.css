@@ -1191,20 +1191,7 @@ section {
 
 }
 
-/* Medium screens */
-@media (min-width: 600px) {
-  .certificates .certificate-item {
-    flex: 1 1 48%;
-    
-  }
-}
 
-/* Large screens */
-@media (min-width: 900px) {
-  .certificates .certificate-item {
-    flex: 1 1 40%;
-  }
-}
 
 /* Certificate wrapper with fixed height */
 .certificates .certificate-wrap {
@@ -1311,11 +1298,11 @@ section {
 
 @media (max-width: 599px) {
   .certificates .certificate-item {
-    margin: 10px 20px 10px 20px;   /* top 20px, bottom 10px, centered */
+    margin: 1px 3px 10px 6px;   /* top 20px, bottom 10px, centered */
     max-width: 95%;                /* tighten a bit to avoid awkward centering */
     text-align: center;
     padding-right:5px ;
-    padding-left:5px ;
+    padding-left:25px ;
 
   }
   
@@ -1340,7 +1327,8 @@ section {
     object-position: center;
     border-radius: 10px;
   }
-  
+}
+
 /* Show More Button */
 #show-more-btn {
   background-color: #149ddd;
